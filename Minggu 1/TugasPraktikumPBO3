@@ -1,0 +1,14 @@
+nama_file = 'D:\VSCode\Me.txt'
+
+with open(nama_file, 'r+') as file:
+    isi_file = file.readlines()  
+    isi_file.extend([
+        "Masukkan Nama: Andryano Shevchenko Limbong\n",
+        "Masukkan NIM: 123140205\n",
+        "Masukkan Resolusi Tahun Ini: Jadi Orang Baik, Sopan, Dermawan dan Rajin Menabung"
+    ])
+    file.seek(0)
+    file.writelines(isi_file) 
+
+with open(nama_file, 'r') as file:
+    print(file.read())
