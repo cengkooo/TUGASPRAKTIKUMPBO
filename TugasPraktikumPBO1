@@ -1,6 +1,0 @@
-n = int(input("Tinggi: "))
-
-for i in range(n):
-    bintang = "*" * (2 * i + 1)
-    print(bintang.center(2*n - 1))
-
